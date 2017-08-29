@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AdaptableBottomNavigation</string>
+
+    <string name="clean">Clean</string>
+    <string name="tools">Tools</string>
+    <string name="setting">Settings</string>
+    <string name="app_software_manage">Manage App</string>
+</resources>
