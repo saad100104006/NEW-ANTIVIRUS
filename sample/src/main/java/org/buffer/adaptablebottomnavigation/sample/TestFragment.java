@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import org.buffer.adaptablebottomnavigation.view.AdaptableBottomNavigationView;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -34,6 +36,8 @@ public class TestFragment extends Fragment {
 
     ArcProgress arcStore;
 
+    private AdaptableBottomNavigationView bottomNavigationView;
+
 
     public static TestFragment newInstance(String imageRes) {
         TestFragment imageFragment = new TestFragment();
@@ -47,6 +51,8 @@ public class TestFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         imageRes = getArguments().getInt(ARG_IMAGE_RESOURCE);
+
+
     }
 
     @Override
@@ -78,6 +84,8 @@ public class TestFragment extends Fragment {
         capacity=(TextView) fragmentView. findViewById(R.id.capacity);
 
         arcStore=(ArcProgress) fragmentView. findViewById(R.id.arc_store);
+
+
      //   progressBar.setProgress(65);
 
 

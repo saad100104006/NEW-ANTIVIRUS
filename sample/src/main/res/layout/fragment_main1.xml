@@ -112,13 +112,15 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="0.0dip"
-        android:layout_weight="1.0">
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
 
         <LinearLayout
             android:id="@+id/viewB"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:background="@color/colorAccent"
             android:gravity="center"
             android:orientation="vertical"
@@ -131,9 +133,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".2"
-                android:background="@color/colorAccent"
+                android:background="@drawable/selector"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:clickable="true"
+
+                >
 
 
                 <ImageView
@@ -161,8 +166,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".2"
-                android:background="@color/colorAccent"
+                android:background="@drawable/selector"
+
                 android:orientation="horizontal"
+                android:clickable="true"
                 android:padding="10dp">
 
 
@@ -192,7 +199,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".2"
-                android:background="@color/colorAccent"
+                android:background="@drawable/selector"
+                android:clickable="true"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -223,7 +231,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".2"
-                android:background="@color/colorAccent"
+                android:background="@drawable/selector"
+                android:clickable="true"
                 android:orientation="horizontal"
                 android:padding="10dp">
 

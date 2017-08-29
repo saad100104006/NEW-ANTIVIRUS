@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         viewSwapperAdapter = new ViewSwapperAdapter(getSupportFragmentManager());
 
         viewSwapper.setAdapter(viewSwapperAdapter);
+
         bottomNavigationView.setupWithViewSwapper(viewSwapper);
     }
 }
