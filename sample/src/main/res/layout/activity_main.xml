@@ -14,7 +14,7 @@
     <org.buffer.adaptablebottomnavigation.view.AdaptableBottomNavigationView
         android:id="@+id/view_bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
         app:itemBackground="@color/colorPrimary"

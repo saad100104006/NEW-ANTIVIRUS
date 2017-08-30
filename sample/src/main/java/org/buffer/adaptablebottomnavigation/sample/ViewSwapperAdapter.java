@@ -21,9 +21,9 @@ public class ViewSwapperAdapter extends FragmentStateAdapter {
             case INDEX_BUFFER:
                 return TestFragment.newInstance("");
             case INDEX_RETREAT:
-                return SettingsFragment.newInstance("");
+                return Toolsfragment.newInstance("");
             case INDEX_VALUES:
-                return SettingsFragment.newInstance("");
+                return Simple.newInstance("");
         }
         return null;
     }
