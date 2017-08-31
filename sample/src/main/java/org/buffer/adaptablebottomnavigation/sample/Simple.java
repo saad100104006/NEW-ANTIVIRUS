@@ -18,7 +18,7 @@ public class Simple extends Fragment {
 
     private static String ARG_IMAGE_RESOURCE = "ARG_IMAGE_RESOURCE";
 
-    private Button restartButton;
+    //private Button restartButton;
     private DashedCircularProgress dashedCircularProgress;
     private TextView numbers;
 
@@ -38,23 +38,18 @@ public class Simple extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.scan, null);
+        return inflater.inflate(R.layout.activity_antivirus, null);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        restartButton = (Button) view.findViewById(R.id.restart);
+        //restartButton = (Button) view.findViewById(R.id.restart);
         dashedCircularProgress = (DashedCircularProgress) view.findViewById(R.id.simple);
         numbers = (TextView) view.findViewById(R.id.number);
         animate();
 
-        restartButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                restart();
-            }
-        });
+
 
         dashedCircularProgress.setOnValueChangeListener(
                 new DashedCircularProgress.OnValueChangeListener() {

@@ -1,5 +1,6 @@
 package org.buffer.adaptablebottomnavigation.sample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -8,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -33,6 +35,8 @@ public class TestFragment extends Fragment {
     private Timer timer2;
     ArcProgress arcProcess;
     TextView capacity;
+
+    LinearLayout antiVirus;
 
     ArcProgress arcStore;
 
@@ -84,6 +88,17 @@ public class TestFragment extends Fragment {
         capacity=(TextView) fragmentView. findViewById(R.id.capacity);
 
         arcStore=(ArcProgress) fragmentView. findViewById(R.id.arc_store);
+
+        antiVirus=(LinearLayout)fragmentView. findViewById(R.id.antivirus);
+
+
+        antiVirus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),AntivirusActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
      //   progressBar.setProgress(65);

@@ -7,8 +7,8 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.org.buffer.adaptablebottomnavigation.sample.widget.LinearLayout;
+import android.org.buffer.adaptablebottomnavigation.sample.widget.TextView;
 
 import com.ferdi.cleaner.base.BaseFragment;
 import com.ferdi.cleaner.model.SDCardInfo;

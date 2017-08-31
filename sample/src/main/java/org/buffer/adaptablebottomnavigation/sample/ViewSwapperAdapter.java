@@ -23,7 +23,7 @@ public class ViewSwapperAdapter extends FragmentStateAdapter {
             case INDEX_RETREAT:
                 return Toolsfragment.newInstance("");
             case INDEX_VALUES:
-                return Simple.newInstance("");
+                return SettingsFragment.newInstance("");
         }
         return null;
     }
